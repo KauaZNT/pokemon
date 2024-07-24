@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POKEMON</title>
+</head>
+<body>
+
+    <div class="circulo"></div>
+
+    <a href="./index.html"><img src="./img/logo.png" alt="logotipo" class="logo"></a>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é só pokemon é um <span id="nome">POKEMON</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error. Aliquam sapiente voluptatibus corporis at hic, quas beatae totam amet voluptatum ab laboriosam ex, labore nisi officia, quisquam inventore voluptate!</p>
+            <button id="botao">Deixe um Like!</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/logo.webp" alt="pokebola" class="poke">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./img/img1.png" alt="verde" class="pokemon verde">
+        <img src="./img/img2.png" alt="roxo" class="pokemon roxo">
+        <img src="./img/img3.png" alt="azul" class="pokemon azul">
+    </div>    
+
+</body>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgcopo = document.querySelector(".poke")
+    let verde = document.querySelector(".verde")
+    let amarelo =document.querySelector(".roxo")
+    let rosa = document.querySelector(".azul")
+    let nome = document.querySelector("#nome")
+    let botao = document.querySelector("#botao")
+
+    verde.addEventListener("click", () => {
+        imgcopo.src ="./img/img1.png"
+        circulo.style.background="#49f37c"
+        nome.innerHTML="Rayquaza"
+        nome.style.color="#49f37c"
+        botao.style.background="#49f37c"
+    })
+
+    amarelo.addEventListener("click", () => {
+        imgcopo.src ="./img/img2.png"
+        circulo.style.background="#f05bcb"
+        nome.innerHTML="Mewtho"
+        nome.style.color="#f05bcb"
+        botao.style.background="#f05bcb"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgcopo.src ="./img/img3.png"
+        circulo.style.background="#747be0"
+        nome.innerHTML="Baxcalibur"
+        nome.style.color="#747be0"
+        botao.style.background="#747be0"
+    })
+</script>
+
+</html>
